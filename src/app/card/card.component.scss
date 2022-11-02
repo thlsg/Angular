@@ -1,0 +1,30 @@
+
+.card {
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    width: 95%;
+    display: flex;
+
+    .card-header {
+        .card-title {
+            width: 100%;
+            text-align: Left;
+            font-weight: lighter;
+        }
+    }
+
+    .card-body {
+        width: 100%;
+        text-align: Left;
+        font-weight: lighter;
+
+    }
+
+    .card-footer {
+        width: 10%;
+        justify-content: space-around;
+    }
+
+}

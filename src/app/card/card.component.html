@@ -1,0 +1,18 @@
+<div class="card">
+    <!-- Afficher le status de la tâche. -->
+    <h3 class="card-status">{{ actions.Fait ? "✔" : null }}</h3>
+    <!-- Afficher le nom de la tâche. -->
+    <div class="card-header">
+        <h3 class="card-title">{{ actions.title | titlecase }}</h3>
+        <p *ngIf="!actions.Fait">Non effecué!</p>
+        <!-- <button class="deleteBtn" (click)="deleteActions(actions)">&times;</button> -->
+    </div>
+    <!-- Afficher le corps de la tâche. -->
+    <div class="card-body">
+        <p>{{actions.content | slice:0:100}}...</p>
+    </div>
+    <!-- Bouton modifiant la tâche (done, edit, ect) -->
+    <div class="card-footer">
+        <button class="deleteBtn">Edit</button>
+    </div>
+</div>
